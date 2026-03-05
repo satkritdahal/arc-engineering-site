@@ -1,0 +1,47 @@
+paths:
+  static: static
+  uploads: static/uploads
+timezone: Asia/Katmandu
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
+    linkify: false
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    breaks: false
+    xhtml: false
+    attributes: false
+    typographer: false
+    treat_indentation_as_code: true
+_snippets_imports:
+  hugo:
+    exclude:
+      - hugo_instagram
+collections_config:
+  pages:
+    path: exampleSite/content
+    icon: wysiwyg
+  example_site:
+    path: exampleSite
+    icon: explicit
+  services:
+    path: exampleSite/content/services
+    icon: devices
+    glob:
+      - '!_index.md'
+  team:
+    path: exampleSite/content/team
+    icon: tram
+    glob:
+      - '!_index.md'
+  example_site_data:
+    path: exampleSite/data
+    icon: 1x_mobiledata
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
